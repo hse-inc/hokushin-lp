@@ -15,17 +15,11 @@
 
   document.querySelectorAll('[data-caro]').forEach((caro) => {
     const list = caro.querySelector('.caro__list');
-    const fill = caro.querySelector('.caro__fill');
-    const n = list.children.length;
     const step = (d) => {
       const w = list.firstElementChild.getBoundingClientRect().width + parseFloat(getComputedStyle(list).columnGap || 0);
       const end = list.scrollLeft + list.clientWidth >= list.scrollWidth - 4;
       list.scrollTo({ left: d > 0 && end ? 0 : list.scrollLeft + d * w, behavior: 'smooth' });
     };
-    list.addEventListener('scroll', () => {
-      const r = list.scrollLeft / Math.max(1, list.scrollWidth - list.clientWidth);
-      fill.style.transform = `translateX(${r * (n - 1) * 100}%)`;
-    }, { passive: true });
     const timer = setInterval(() => { if (caro.closest('.page').classList.contains('is-now')) step(1); }, 4000);
     const stop = () => clearInterval(timer);
     list.addEventListener('pointerdown', stop, { passive: true });
