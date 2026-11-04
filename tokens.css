@@ -1,0 +1,68 @@
+:root {
+  
+  --color-ink: #172D50;          
+  --color-main: #172D50;         
+  --color-main-2: #172D50;       
+  --color-accent: #FA5954;       
+  --color-accent-2: #172D50;     
+  --color-base: #FCF9F4;         
+  --color-pale: #FBEDE6;         
+  --color-line: rgb(23 45 80 / 0.35);         
+  --color-on-dark: #ffffff;      
+  --color-on-dark-line: rgb(255 255 255 / 0.6);
+  --color-error: #172D50;        
+  --color-shadow: rgb(23 45 80 / 0.16);
+  --color-white: #ffffff;
+  --color-block: #F1ECE3;        
+  --color-shade: rgb(23 45 80 / 0.72); 
+
+  
+  --bg-dark: var(--color-main);
+  --bg-accent: var(--color-main);   
+
+  
+  --font-body: "Zen Kaku Gothic New", "Hiragino Sans", "Hiragino Kaku Gothic ProN", system-ui, sans-serif;
+  --font-head: "Zen Kaku Gothic New", "Hiragino Sans", system-ui, sans-serif;
+  --font-en: "Urbanist", "Zen Kaku Gothic New", sans-serif;
+  
+  --fs-min: 13px;
+  
+  --fs-base: clamp(var(--fs-min), min(2.15dvh, 3.6vw), 14.5px);
+  --fs-ui: max(var(--fs-min), 13px);   
+  --fs-input: 16px;                     
+  --fw-body: 500;                
+  --ls-body: 0.04em;
+  --lh-body: 1.85;
+  --lh-head: 1.65;
+  --ls-head: 0.04em;
+  --fw-head: 700;
+  --fs-head: 1.42em;             
+  --fs-en: 2.05em;               
+
+  
+  --col: 480px;                  
+  --header-h: 56px;
+  --gutter: 22px;                
+  --sp-1: 0.45em;                
+  --sp-p: 0.8em;                
+  --sp-g: 1.25em;                 
+  --pad-y: 1.2em;                
+  --next-h: 0px;                 
+  --radius-pill: 999px;
+  --radius-s: 6px;
+  --shadow-soft: 0 0 10px 0 var(--color-shadow);
+  --shadow-column: 0 0 24px 0 var(--color-shadow);
+
+  
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --rise: 32px;                  
+  --dur-in: 600ms;
+  --dur-hover: 300ms;
+  --strip-speed: 24s;            
+  --strip-gap: 16px;
+  --dur-photo: 1100ms;           
+  
+  --tex-grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .09 0 0 0 0 .18 0 0 0 0 .31 0 0 0 .5 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+@media (max-height: 600px) { :root { --pad-y: 0.7em; } }
