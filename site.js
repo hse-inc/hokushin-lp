@@ -1,5 +1,5 @@
 (() => {
-  const START_MS = 60, STEP_MS = 110;
+  const START_MS = 60, STEP_MS = 110, VIS_MS = 130;
   let timers = [];
   const pages = [...document.querySelectorAll('.page')];
   const video = document.querySelector('.hero__video');
@@ -7,7 +7,12 @@
     timers.forEach(clearTimeout);
     pages.forEach((p) => p.classList.toggle('is-now', p === page));
     document.querySelectorAll('.rvp.is-on').forEach((el) => { if (!page.contains(el)) el.classList.remove('is-on'); });
-    timers = [...page.querySelectorAll('.rvp:not(.is-on)')].map((el, k) => setTimeout(() => el.classList.add('is-on'), START_MS + STEP_MS * k));
+    let nText = 0, nVis = 0;
+    timers = [...page.querySelectorAll('.rvp:not(.is-on)')].map((el) => {
+      const vis = el.matches('.pf-photo, .pf-fade-in, .pf-slide-l, .pf-slide-r, .pf-draw');
+      const wait = START_MS + (vis ? VIS_MS * nVis++ : STEP_MS * nText++);
+      return setTimeout(() => el.classList.add('is-on'), wait);
+    });
     if (video) { if (page.contains(video)) video.play().catch(() => {}); else video.pause(); }
   };
   const io = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) enter(e.target); }), { root: document.getElementById('slider'), threshold: 0.5 });
