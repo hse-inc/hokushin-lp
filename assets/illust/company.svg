@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 260" fill="none">
+  <style>.w{animation:t 3.2s ease-in-out infinite alternate}.d1{animation-delay:.6s}.d2{animation-delay:1.3s}.d3{animation-delay:2s}@keyframes t{from{opacity:.25}to{opacity:1}}</style>
+  <circle cx="330" cy="62" r="30" fill="#FA5954"/>
+  <rect x="48" y="104" width="88" height="136" rx="6" fill="#fff" stroke="#172D50" stroke-width="2.4"/>
+  <rect x="136" y="44" width="124" height="196" rx="6" fill="#FA5954"/>
+  <rect x="260" y="130" width="104" height="110" rx="6" fill="#fff" stroke="#172D50" stroke-width="2.4"/>
+  <path d="M260 130l52-34 52 34" stroke="#172D50" stroke-width="2.4" stroke-linejoin="round"/>
+  <g fill="#fff"><rect class="w" x="156" y="66" width="24" height="24" rx="3"/><rect class="w d1" x="198" y="66" width="24" height="24" rx="3" opacity=".5"/><rect class="w d2" x="156" y="108" width="24" height="24" rx="3"/><rect class="w d3" x="198" y="108" width="24" height="24" rx="3"/><rect class="w d1" x="156" y="150" width="24" height="24" rx="3"/><rect class="w" x="198" y="150" width="24" height="24" rx="3"/></g>
+  <rect x="180" y="194" width="36" height="46" rx="3" fill="#fff"/>
+  <g fill="#FA5954"><rect class="w d2" x="66" y="124" width="18" height="18" rx="2"/><rect class="w" x="100" y="124" width="18" height="18" rx="2"/><rect class="w d3" x="66" y="160" width="18" height="18" rx="2"/><rect class="w d1" x="100" y="160" width="18" height="18" rx="2"/></g>
+  <g stroke="#172D50" stroke-width="2.4" stroke-linecap="round"><path d="M280 158h24M322 158h24M280 182h24M322 182h24"/></g>
+  <path d="M0 240h420" stroke="#172D50" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M198 44V18" stroke="#172D50" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M198 18c10-6 18 6 30 0v16c-12 6-20-6-30 0z" fill="#FA5954"/>
+  <path d="M48 216H16v-40M364 214h42v-52" stroke="#FA5954" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

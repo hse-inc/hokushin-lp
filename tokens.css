@@ -6,26 +6,23 @@
   --color-accent: #FA5954;       
   --color-accent-2: #172D50;     
   --color-base: #FCF9F4;         
-  --color-pale: #FBEBE3;
-  --color-mid: #F8BFB3;                   
+  --color-pale: #FFFFFF;
   --color-line: rgb(23 45 80 / 0.35);         
   --color-on-dark: #ffffff;      
   --color-on-dark-line: rgb(255 255 255 / 0.6);
   --color-error: #172D50;        
   --color-shadow: rgb(23 45 80 / 0.16);
   --color-white: #ffffff;
-  --color-block: #F1ECE3;        
-  --color-shade: rgb(23 45 80 / 0.66); 
-  --color-shade-deep: rgb(23 45 80 / 0.84);
+  --color-shade: rgb(23 45 80 / 0.74); 
 
   
   --bg-dark: var(--color-main);
   --bg-accent: var(--color-main);   
 
   
-  --font-body: "Zen Kaku Gothic New", "Hiragino Sans", "Hiragino Kaku Gothic ProN", system-ui, sans-serif;
-  --font-head: "Zen Kaku Gothic New", "Hiragino Sans", system-ui, sans-serif;
-  --font-en: "Urbanist", "Zen Kaku Gothic New", sans-serif;
+  --font-body: YuGothic, "Yu Gothic Medium", "Yu Gothic", "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  --font-head: YuGothic, "Yu Gothic", "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  --font-en: "Urbanist", YuGothic, "Yu Gothic", "Hiragino Sans", sans-serif;
   
   --fs-min: 13px;
   
@@ -35,10 +32,10 @@
   --fw-body: 500;                
   --ls-body: 0.04em;
   --lh-body: 1.85;
-  --lh-head: 1.65;
+  --lh-head: 1.55;
   --ls-head: 0.04em;
-  --fw-head: 700;
-  --fs-head: 1.45em;             
+  --fw-head: 800;
+  --fs-head: 1.55em;             
   --fs-en: 2em;               
 
   
@@ -64,18 +61,16 @@
   --strip-gap: 16px;
   --coral-soft: rgb(250 89 84 / 0.22);
   --coral-faint: rgb(250 89 84 / 0.10);
-  --navy-faint: rgb(23 45 80 / 0.07);
+  --navy-faint: rgb(23 45 80 / 0.05);
   --navy-soft: rgb(23 45 80 / 0.16);
-  --coral-strong: rgb(250 89 84 / 0.42);
   
-  --grad-1: linear-gradient(155deg, rgb(250 89 84 / 0.26) 0%, rgb(250 89 84 / 0.06) 46%, rgb(23 45 80 / 0.17) 100%);
-  --grad-2: linear-gradient(205deg, rgb(250 89 84 / 0.20) 0%, rgb(250 89 84 / 0.05) 50%, rgb(23 45 80 / 0.15) 100%);
-  --grad-3: linear-gradient(25deg, rgb(23 45 80 / 0.16) 0%, rgb(250 89 84 / 0.06) 52%, rgb(250 89 84 / 0.28) 100%);
-  --grad-4: linear-gradient(120deg, rgb(250 89 84 / 0.22) 0%, rgb(250 89 84 / 0.05) 45%, rgb(23 45 80 / 0.14) 100%);
-  --grad-line: linear-gradient(180deg, var(--color-accent), var(--color-main));
-  --grad-wm: linear-gradient(150deg, var(--color-accent), var(--color-main));
-  --grad-mark: linear-gradient(90deg, rgb(250 89 84 / 0.22), rgb(250 89 84 / 0.06));
+  --light-core: rgb(255 255 255 / 0.95);
+  --light-mid: rgb(255 255 255 / 0.6);
+  --light-end: rgb(255 255 255 / 0);
   --wave-line: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='8' viewBox='0 0 40 8'%3E%3Cpath d='M0 4c5-5 15-5 20 0s15 5 20 0' fill='none' stroke='%23FA5954' stroke-width='2'/%3E%3C/svg%3E");
+  --burst: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cg fill='none' stroke='%23FA5954' stroke-width='3.2' stroke-linecap='round'%3E%3Cpath d='M8 30 3 36M18 22l2-13M28 28l9-7'/%3E%3C/g%3E%3C/svg%3E");
+  --heart: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23FA5954' d='M12 21S3 15 3 8.5A5 5 0 0 1 12 6a5 5 0 0 1 9 2.5C21 15 12 21 12 21z'/%3E%3C/svg%3E");
+  --rings: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 170' fill='none'%3E%3Cg stroke='%23FA5954' stroke-width='2'%3E%3Ccircle cx='70' cy='85' r='62'/%3E%3Ccircle cx='120' cy='85' r='62'/%3E%3Ccircle cx='170' cy='85' r='62'/%3E%3C/g%3E%3C/svg%3E");
   --dur-photo: 1100ms;           
 }
 
